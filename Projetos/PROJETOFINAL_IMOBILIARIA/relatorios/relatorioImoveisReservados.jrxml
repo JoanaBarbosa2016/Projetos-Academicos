@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorioImoveisReservados" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0306577f-b691-4add-a5c4-8d4d02a2a1a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[Select *From imovel Where status=1]]>
+	</queryString>
+	<field name="codigo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endereco" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bairro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cidade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="complemento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ab577d0c-eb22-47b8-9799-d3737c219284" x="200" y="15" width="223" height="39"/>
+				<textElement>
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<text><![CDATA[Imóveis Reservados]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<line>
+				<reportElement uuid="4c434e4d-8c62-4894-89a6-aabec60b1a5a" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="b4fad6b9-ead1-4e1f-b2b8-4a2cef5c0366" style="Column header" x="0" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c2297803-e6ef-4474-ad8a-7962245f0b65" style="Column header" x="50" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9dfa2a0c-5685-41b2-affc-6a344cb0e50b" style="Column header" x="100" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[descricao]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4cf1176c-e84f-46cd-96ba-9f7beeddb220" style="Column header" x="150" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[endereco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bc53a338-9a11-4c71-ac8b-3b8d940ad6d4" style="Column header" x="200" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[numero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d10d7c6b-9d0e-49c2-a954-414869a660f6" style="Column header" x="250" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[bairro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b41eb1f9-f755-4e6e-920a-2eb3af8bf52f" style="Column header" x="300" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[cidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c66106a7-b24b-4f72-857c-cc65504b1b14" style="Column header" x="350" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a857d89e-f88b-471a-a0a4-c431b9ea8e56" style="Column header" x="400" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[complemento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5bf895c4-0029-4130-81e5-34180d824446" style="Column header" x="450" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[valor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="efec312e-189d-45d4-94d2-550f3425ec46" style="Column header" x="500" y="19" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<line>
+				<reportElement uuid="07645915-0598-4693-bc7a-23daa01597d6" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="440db0f2-c14e-4480-95f6-cbf3c80ab699" style="Detail" x="0" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e9f7c431-c467-441d-8a0b-43126b0523d4" style="Detail" x="50" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9cb87e94-b86f-4b99-8a64-6cd977e03d47" style="Detail" x="100" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{descricao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="405d5932-34d8-45af-8326-554a3394e5b2" style="Detail" x="150" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{endereco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ced57c9b-24c5-4d7c-8a24-9f8804eaf901" style="Detail" x="200" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f31b1853-1af9-423d-8c32-c9577cfd207a" style="Detail" x="250" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{bairro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8122e5be-fe8e-4983-a01f-99d13af09a2f" style="Detail" x="300" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5ac27b05-c37f-44d6-81c2-52469366a1fc" style="Detail" x="350" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1a5bdc13-077c-4bcf-ae41-fed7007d6d32" style="Detail" x="400" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{complemento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1f89acd6-049f-466b-a82a-9b147607d517" style="Detail" x="450" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="af6e4bd8-cf4d-4b34-84ad-a2ed2a74086d" style="Detail" x="500" y="0" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement uuid="47bc2a54-b0cf-42b1-8ec0-bf12c75d50ba" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
